@@ -1,0 +1,127 @@
+/* Courses section styles */
+.courses {
+    padding: 4rem 0;
+    background-color: #f8f9fa;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .courses-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .courses-header h2 {
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+  }
+
+  .courses-header p {
+    color: #666;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+
+  .course-card {
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .course-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+
+  .course-content {
+    padding: 1.5rem;
+  }
+
+  .course-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+  }
+
+  .course-description {
+    color: #666;
+    margin-bottom: 1rem;
+    line-height: 1.5;
+  }
+
+  .course-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+    display: flex;
+    align-items: center;
+  }
+
+  .price-symbol {
+    font-size: 1rem;
+    margin-right: 0.25rem;
+  }
+
+  .enroll-button, .enroll-button1 {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .enroll-button {
+    background-color: #2563eb;
+    color: white;
+  }
+
+  .enroll-button:hover {
+    background-color: #1d4ed8;
+  }
+
+  .enroll-button[disabled] {
+    background-color: #94a3b8;
+    cursor: not-allowed;
+  }
+
+  .enroll-button1, .enroll-button {
+    background-color: #059669;
+    color: white;
+  }
+
+  .enroll-button1:hover {
+    background-color: #047857;
+  }
+
+  @media (max-width: 768px) {
+    .courses-grid {
+      grid-template-columns: 1fr;
+    }
+  }
