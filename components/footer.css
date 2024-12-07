@@ -1,0 +1,10 @@
+/* Footer styles */
+.footer {
+    background-color: var(--secondary-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer p {
+    color: var(--text-light);
+}
