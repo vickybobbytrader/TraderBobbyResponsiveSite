@@ -111,13 +111,20 @@
     cursor: not-allowed;
   }
 
-  .enroll-button1, .enroll-button {
+   .enroll-button1 {
+    background-color: #dc0b0b;
+    cursor: not-allowed;
+    color: white;
+  }
+
+  .enroll-button {
     background-color: #059669;
     color: white;
   }
 
   .enroll-button1:hover {
-    background-color: #047857;
+    background-color: #b00c0c;
+    color: white;
   }
 
   @media (max-width: 768px) {
