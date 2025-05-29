@@ -38,6 +38,7 @@
      crossorigin="anonymous"></script>
 
 <!--One-One payment change methods style here-->
+
     <style>
     #customText {
       display: none; /* Initially hidden */
@@ -158,7 +159,101 @@ His approach has revolutionized the way traders analyze opportunities, ensuring 
         </div>
     </section>
 
-        <!-- Rest of the content remains exactly the same -->
+   <div class="features">
+  <div class="features-header">
+    <h2 class="text-3xl font-extrabold text-gray-800">Choose Your Learning Path</h2>
+    <p class="buttex">Select the option that best fits your trading goals</p>
+  </div>
+
+  <div class="feature-card1">
+    <!-- Option 1 -->
+    <button onclick="displayCourse('recorded')" class="mentor-ctab">
+      
+      <span class="ml-4 text-lg font-semibold">Recorded Class</span>
+    </button>
+
+    <!-- Option 2 -->
+    <button onclick="displayCourse('liveLearn')" class="mentor-ctab">
+     
+      <span class="ml-4 text-lg font-semibold">Live Trade + Learn Strategy</span>
+    </button>
+
+    <!-- Option 3 -->
+    <button onclick="displayCourse('live')" class="mentor-ctab">
+     
+      <span class="ml-4 text-lg font-semibold">Live Trade with Me</span>
+    </button>
+
+</br></br>
+  <div id="courseContent" class="optionshown"></div>
+</div>
+
+<script>
+  function displayCourse(choice) {
+    const content = document.getElementById("courseContent");
+
+    const templates = {
+      recorded: `
+        <div class="courses-grid">
+          <div class="course-card">
+            <img src="3.0.png" alt="Recorded Class" class="course-image">
+            <div class="course-content">
+              <h3 class="course-title">Recorded Class (English)</h3>
+              <p class="course-description">Complete item with lifetime access to materials</p>
+              <div class="course-details">
+                <div class="price">₹10,000 + GST</div>
+                <button class="enroll-button" onclick="window.open('https://vickypedia7reaal.rpy.club/course/KPsQZwt1gn', '_blank')">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="course-card">
+            <img src="3.0.png" alt="Recorded Class" class="course-image">
+            <div class="course-content">
+              <h3 class="course-title">Recorded Class (Tamil)</h3>
+              <p class="course-description">Complete item in Tamil with lifetime access</p>
+              <div class="course-details">
+                <div class="price">₹10,000 + GST</div>
+                <button class="enroll-button" onclick="window.open('https://vickypedia7reaal.rpy.club/course/DkDwZlr9th', '_blank')">Enroll Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      `,
+      live: `
+        <div class="course-card" style="margin: 0 auto; max-width: 600px;">
+          <img src="commingsoon.png" alt="Live Trading" class="course-image">
+          <div class="course-content">
+            <h3 class="course-title">Live Trade with Me</h3>
+            <p class="course-description">Join real-time market sessions with Vicky Bobby</p>
+            <div class="course-details">
+              <div class="price">Coming Soon</div>
+            </div>
+          </div>
+        </div>
+      `,
+      liveLearn: `
+        <div class="course-card" style="margin: 0 auto; max-width: 600px;">
+          <img src="livetrading.jpg" alt="Live Learn" class="course-image">
+          <div class="course-content">
+            <h3 class="course-title">Live Trade + Learn Strategy</h3>
+            <p class="course-description">Trade and learn the Time Formula strategy live</p>
+            <div class="course-details">
+              <div class="price">₹27,700</div>
+              <button class="enroll-button" onclick="window.open('https://vickypedia7reaal.rpy.club/webinar/mt6e6TWBkc', '_blank')">Enroll Now</button>
+            </div>
+          </div>
+        </div>
+      `,
+      
+    };
+
+    content.innerHTML = templates[choice] || '';
+  }
+</script>
+
+
+    <!-- Rest of the content remains exactly the same -->
         <section class="features">
             <div class="features-header">
                 <h2>Why choose us</h2>
@@ -188,72 +283,7 @@ His approach has revolutionized the way traders analyze opportunities, ensuring 
             </div>
         </section>
 
-        <section id="courses" class="courses">
-            <div class="container">
-              <div class="courses-header">
-                <h2>Our Trading Courses</h2>
-                <p>Choose from our selection of comprehensive trading courses designed to help you succeed in the financial markets.</p>
-              </div>
-
-              <div class="courses-grid">
-
-                <div class="course-card">
-                  <img src="livetrading.jpg" alt="One on One Mentorship" class="course-image">
-                  <div class="course-content">
-                    <h3 class="course-title">21 Days Live Trading Workshop (June Batch)</h3>
-                    <p class="course-description">Advance Reversal Strategy with Time Formula V3.0</p>
-                    <div class="course-details">
-                      <div class="price">
-                        <span class="price-symbol">₹</span>27,700
-                      </div>
-                      <button class="enroll-button" id="live">Enroll</button>
-                    </div>
-                  </div>
-                </div> 
-        
-                <div class="course-card">
-                  <img src="3.0.png" alt="Recorded Class" class="course-image">
-                  <div class="course-content">
-                    <h3 class="course-title">Recorded Class (English)</h3>
-                    <p class="course-description">Life Time Whatsapp Community</p>
-                    <div class="course-details">
-                      <div class="price">
-                        <span class="price-symbol">₹</span>10,000 + GST
-                      </div>
-                      <button class="enroll-button" id="eng">Enroll Now</button>
-                    </div>
-                  </div>
-                </div>
-      
-                <div class="course-card">
-                  <img src="3.0.png" alt="Recorded Class" class="course-image">
-                  <div class="course-content">
-                    <h3 class="course-title">Recorded Class (Tamil)</h3>
-                    <p class="course-description">Life Time Whatsapp Community</p>
-                    <div class="course-details">
-                      <div class="price">
-                        <span class="price-symbol">₹</span>10,000 + GST
-                      </div>
-                      <button class="enroll-button" id="tam">Enroll Now</button>
-                    </div>
-                  </div>
-                </div>
-                
-                
-              </div>
-            </div>
-          </section>
     </main>
-    <!--
-    <div id="customText">
-    <p><strong>Bank Name:</strong> The Karur Vysya Bank</p>
-    <p><strong>User Name:</strong> Vignesh S</p>
-    <p><strong>Account Number:</strong> 1885155000018969</p>
-    <p><strong>IFSC Code:</strong> KVBL0001885</p>
-    <p>Only Bank Transfer ✅</p>
-    <p>After Payment, send the payment screenshot to <a href="https://wa.me/918883072288" target="_blank">this WhatsApp number</a> to book your one-on-one session.</p>
-  </div>
--->
 
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5504272387818584"
      crossorigin="anonymous"></script>
