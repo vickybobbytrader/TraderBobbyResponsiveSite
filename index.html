@@ -165,24 +165,58 @@ His approach has revolutionized the way traders analyze opportunities, ensuring 
     <p class="buttex">Select the option that best fits your trading goals</p>
   </div>
 
-  <div class="feature-card1">
-    <!-- Option 1 -->
-    <button onclick="displayCourse('recorded')" class="mentor-ctab">
-      
-      <span class="ml-4 text-lg font-semibold">Recorded Class</span>
-    </button>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <!-- Option 2 -->
-    <button onclick="displayCourse('liveLearn')" class="mentor-ctab">
-     
-      <span class="ml-4 text-lg font-semibold">Live Trade + Learn Strategy</span>
-    </button>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    <!-- Option 3 -->
-    <button onclick="displayCourse('live')" class="mentor-ctab">
-     
-      <span class="ml-4 text-lg font-semibold">Live Trade with Me</span>
-    </button>
+  <div class="feature-card1 responsive-buttons">
+  <!-- Option 1 -->
+  <button onclick="displayCourse('recorded')" class="mentor-ctab">
+    <span class="text-lg font-semibold">Recorded Class</span>
+  </button>
+
+  <!-- Option 2 -->
+  <button onclick="displayCourse('liveLearn')" class="mentor-ctab">
+    <span class="text-lg font-semibold">Live Trade + Learn Strategy</span>
+  </button>
+
+  <!-- Option 3 -->
+  <button onclick="displayCourse('live')" class="mentor-ctab">
+    <span class="text-lg font-semibold">Live Trade with Me</span>
+  </button>
+</div>
+<style>
+  .responsive-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px; /* Space between buttons */
+    justify-content: center;
+    padding: 20px;
+  }
+
+  .mentor-ctab {
+    background: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .mentor-ctab:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    .mentor-ctab {
+      min-width: 100%;
+    }
+  }
+</style>
+
 
 </br></br>
   <div id="courseContent" class="optionshown"></div>
