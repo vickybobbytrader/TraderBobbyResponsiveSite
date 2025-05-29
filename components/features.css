@@ -35,6 +35,19 @@
     box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+.feature-card1 {
+    background: transparent;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+.optionshown {
+    display:block;
+    padding: 1rem;
+}
+
 .feature-card:hover {
     transform: translateY(-5px);
 }
