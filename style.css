@@ -344,6 +344,23 @@ body {
     box-shadow: 0 8px 12px rgba(59, 130, 246, 0.3);
 }
 
+.mentor-ctab {
+    background: #04AA6D;
+    color: white;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    border-radius: 0.8rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
+}
+
+.mentor-ctab:hover {
+    transform: translateY(-2px);
+    box-shadow: 4px 8px 12px rgba(59, 212, 246, 0.3);
+}
 /* Footer Styles */
 .footer {
     background: linear-gradient(180deg, #1a1a1a 0%, #2d3748 100%);
