@@ -3,448 +3,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vicky Bobby Trader</title>
-    <link rel="icon" href="trend.png">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="components/header.css">
-    <link rel="stylesheet" href="components/hero.css">
-    <link rel="stylesheet" href="components/features.css">
-    <link rel="stylesheet" href="components/courses.css">
-    <link rel="stylesheet" href="components/footer.css">
-
-    <meta property="og:title" content="VickyBobby_Trader">
-    <meta property="og:description" content="Discover the inspiring journey of Vicky Bobby, a seasoned trading expert with over a decade of experience in the financial markets. Renowned for his innovative reversal strategy that integrates precise time formulas and advanced mathematical calculations, Vignesh equips traders with practical tools like a detailed Excel sheet to identify market turning points effectively. As a mentor, he combines technical mastery with personalized guidance to empower traders, transforming their approach to financial markets and paving the way for consistent success.">
-    <meta name="keywords" content="Trading expert, Financial markets mentor, Reversal strategy, Trading strategies, Financial market analysis, Excel-based trading tools, Advanced mathematical trading, Time formula trading, Proprietary trading strategies, Market turning points, Technical trading mentor, Trading success strategies, Personalized trading guidance, Financial market expertise, Innovative trading methods, How to identify market turning points, Trading strategies using time formulas, Advanced Excel tools for trading, Learn proprietary reversal trading strategies, Expert mentorship in financial markets,Vickybobbytrader,Vicky,best trading,good trading">
-    <meta name="author" content="Vicky Bobby">
-    <meta name="google-adsense-account" content="ca-pub-5504272387818584">
-    <link rel="icon" href="trend.png">
-    <!-- Structured Data for Google Search -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "url": "https://www.vickybobbytrader.com",
-        "name": "Vicky Bobby Trader",
-        "description": "Discover the inspiring journey of Vicky Bobby, a seasoned trading expert with over a decade of experience in the financial markets. Renowned for his innovative reversal strategy that integrates precise time formulas and advanced mathematical calculations, Vignesh equips traders with practical tools like a detailed Excel sheet to identify market turning points effectively. As a mentor, he combines technical mastery with personalized guidance to empower traders, transforming their approach to financial markets and paving the way for consistent success.",
-        "publisher": {
-            "@type": "Organization",
-            "name": "Vicky Bobby Trader",
-            "logo": "trend.png"
+    <title>Elite Trading Consultancy | 1:1 Strategy Sessions</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind Theme for a professional, energetic look -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4F46E5', // Indigo for confidence
+                        'accent': '#10B981',  // Emerald for growth/success
+                        'dark-bg': '#111827', // Dark background for seriousness
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
         }
-    }
     </script>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5504272387818584"
-     crossorigin="anonymous"></script>
-
-<!--One-One payment change methods style here-->
-
     <style>
-    #customText {
-      display: none; /* Initially hidden */
-      margin-top: 10px;
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background-color: #f9f9f9;
-      padding: 15px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-    }
-    a {
-      color: #007bff;
-      text-decoration: none;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-  </style>
+        /* Custom styles for professional background texture or gradients */
+        .hero-bg {
+            background-color: #111827;
+            background-image: radial-gradient(at 0% 0%, #1f2937 0, transparent 50%), 
+                              radial-gradient(at 100% 100%, #1e40af 0, transparent 70%);
+        }
+    </style>
 </head>
-<body>
-    <header class="header">
-        <div class="container">
-            <h1 class="logo">VickyBobbyTrader</h1>
-            <button class="mobile-menu-btn" aria-label="Toggle menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <nav class="nav">
-                <ul class="nav-list">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#courses" class="nav-link">Courses</a></li>
-                    <li><a href="#mentor" class="nav-link">About us</a></li>
-                </ul>
-            </nav>
+<body class="bg-dark-bg text-white font-sans antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="p-4 border-b border-gray-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-accent tracking-wider">
+                Elite Trading Co.
+            </h1>
+            <a href="#booking-section" class="px-4 py-2 bg-primary hover:bg-indigo-600 text-white rounded-lg transition duration-200 shadow-lg">
+                Book Now
+            </a>
         </div>
     </header>
 
-    <main>
-        <section class="hero" id="home">
-            <div class="container hero-container">
-                <div class="hero-content">
-                    <h2>Master the Art of <span style="color: black;">Trading</span></h2>
-                    <p>Learn professional trading strategies from experienced mentors and transform your trading journey.</p>
-                    <button class="cta-button"><a href="#courses" style="text-decoration: none;color: black;">Get Started</a> </button>
-                </div>
-                <div class="hero-image">
-                    <div className="bg-white p-2 rounded-lg shadow-xl">
-                        <img 
-                          src="vicky.jpg"
-                          alt="Trading Analysis"
-                          className="rounded-lg shadow-xl"
-                          width="400px"
-                        />
-                    </div>
-                </div>
-            </div>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 md:py-32 text-center">
+        <div class="container mx-auto px-6">
+            <!-- Main Confident Headline -->
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                <span class="text-primary block">Stop Guessing.</span> Start Growing.
+            </h2>
+            <!-- Sub-headline / Confident Pitch -->
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Unlock your **consistent edge** with a personalized, 1:1 strategy session. We cut through the noise and build a clear trading blueprint for *your* goals.
+            </p>
+            <!-- Primary Call to Action -->
+            <button onclick="document.getElementById('booking-modal').classList.remove('hidden')" 
+                    class="px-10 py-4 bg-accent text-dark-bg text-xl font-bold rounded-xl shadow-2xl hover:bg-emerald-400 transform hover:scale-105 transition duration-300 ring-2 ring-primary">
+                Secure Your 20-Min Strategy Call
+            </button>
+            <p class="mt-4 text-sm text-gray-500">Limited slots available this week.</p>
+        </div>
+    </section>
 
-        <!-- Meet Your Mentor Section -->
-    <section class="mentor-section" id="mentor">
-        <div class="mentor-container">
-            <div class="mentor-image">
-               <!-- <img src="mentor.jpg" 
-                     alt="Vignesh - Trading Mentor" 
-                     class="mentor-photo"> -->
-            </div>
-            <div class="mentor-content">
-                <h2 class="mentor-title">Meet Your Mentor</h2>
-                <h3 class="mentor-name">Mr.Vicky Bobby</h3>
-                <div class="mentor-achievements">
-                    <div class="achievement-item">
-                        <span class="achievement-number">5+</span>
-                        <span class="achievement-label">Years Trading Experience</span>
-                    </div>
-                    <div class="achievement-item">
-                        <span class="achievement-number">1000+</span>
-                        <span class="achievement-label">Students Mentored</span>
-                    </div>
-                    <div class="achievement-item">
-                        <span class="achievement-number">95%</span>
-                        <span class="achievement-label">Success Rate</span>
-                    </div>
-                    <div class="achievement-item">
-                        <span class="achievement-number">1L+</span>
-                        <span class="achievement-label">Instagram Followers</span>
-                    </div>
+    <!-- Value Proposition / The Problem & Solution -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-100">Are You Stuck In The Trader's Loop?</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
+                <!-- Problem 1: Inconsistency -->
+                <div class="p-6 bg-gray-800/50 rounded-xl shadow-xl border-t-4 border-primary/50">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.275a1.125 1.125 0 011.238-0.231c0.368 0.164 0.584 0.559 0.584 0.985v10.5c0 0.828-0.672 1.5-1.5 1.5H4.5c-0.828 0-1.5-0.672-1.5-1.5V6.75c0-0.828 0.672-1.5 1.5-1.5h10.5c0.426 0 0.821-0.216 0.985-0.584a1.125 1.125 0 010.231-1.238z"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2 text-accent">Inconsistency</h4>
+                    <p class="text-gray-400">You have a few great days, but the next wipes out your gains. You lack a defined, repeatable process.</p>
                 </div>
-                <p class="mentor-bio">
-                    
-Meet Vicky Bobby, a distinguished trading expert with over a decade of experience in the financial markets.
-He developed a proprietary reversal strategy that combines precise time formulas and advanced mathematical calculations, offering traders a powerful tool for identifying market turning points.
-His approach has revolutionized the way traders analyze opportunities, ensuring they are equipped with the skills and strategies needed for long-term success.
-                </p>
-                <div class="mentor-highlights">
-                    <div class="highlight-item">
-                        <i class="icon-chart">
-                            <img src="trade.png" alt="" width="25px" height="20px">
-                        </i>
-                        <span>Reversal Strategy</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="icon-award">
-                            <img src="one2one.png" alt="" width="25px" height="20px">
-                        </i>
-                        <span>1-1 Mentorship</span>
-                    </div>
-                    <div class="highlight-item">
-                        <i class="icon-users">
-                            <img src="whatsapp.png" alt="" width="25px" height="20px">
-                        </i>
-                        <span>Whatsapp Community</span>
-                    </div>
+
+                <!-- Problem 2: Psychology -->
+                <div class="p-6 bg-gray-800/50 rounded-xl shadow-xl border-t-4 border-primary/50">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2 text-accent">Emotional Trades</h4>
+                    <p class="text-gray-400">Fear and greed control your entries and exits. You chase momentum and suffer from revenge trading.</p>
                 </div>
-                <button class="mentor-cta">Schedule a Consultation</button>
+
+                <!-- Problem 3: Direction -->
+                <div class="p-6 bg-gray-800/50 rounded-xl shadow-xl border-t-4 border-primary/50">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14M9 19c-3.1 0-5 0-5 0M9 19c0-3.1 0-5 0-5M21 16V5M9 14v5m12-3l-12 3"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2 text-accent">No Clear Plan</h4>
+                    <p class="text-gray-400">You jump between strategies or rely on signals. You need a simple, proven system tailored to *you*.</p>
+                </div>
             </div>
         </div>
     </section>
 
-   <div class="features" id="courses">
-  <div class="features-header">
-    <h2 class="text-3xl font-extrabold text-gray-800">Choose Your Learning Path</h2>
-    <p class="buttex">Select the option that best fits your trading goals</p>
-  </div>
+    <!-- Consultation Focus Section -->
+    <section class="py-16 bg-dark-bg" id="consultation-focus">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-gray-800/70 p-8 md:p-12 rounded-2xl shadow-2xl">
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-primary text-center">
+                    What You Get In 20 Minutes
+                </h3>
+                <p class="text-gray-300 text-center mb-8">
+                    This isn't a sales pitch. This is a focused diagnosis session to give you immediate clarity.
+                </p>
 
-  <div class="feature-card1 responsive-buttons">
-  <!-- Option 1 -->
-  <button onclick="displayCourse('recorded')" class="mentor-ctab">
-    <span class="text-lg font-semibold">Recorded Class</span>
-  </button>
-
-  <!-- Option 2 -->
-  <button onclick="displayCourse('liveLearn')" class="mentor-ctab">
-    <span class="text-lg font-semibold">Live Trade + Learn Strategy ( August Batch ) </span>
-  </button>
-
-  <!-- Option 3 -->
-  <button onclick="displayCourse('live')" class="mentor-ctab">
-    <span class="text-lg font-semibold">One-on-One Session</span>
-  </button>
-</div>
-<style>
-  .responsive-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px; /* Space between buttons */
-    justify-content: center;
-    padding: 20px;
-  }
-
-  .mentor-ctab {
-    background: #04AA6D;
-    color: white;
-    padding: 12px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 10px;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    min-width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-
-  .mentor-ctab:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
-  }
-
-  @media (max-width: 768px) {
-    .mentor-ctab {
-      min-width: 100%;
-    }
-  }
-</style>
-
-
-</br></br>
-  <div id="courseContent" class="optionshown"></div>
-</div>
-
-<script>
-  function displayCourse(choice) {
-    const content = document.getElementById("courseContent");
-
-    const templates = {
-      recorded: `
-        <div class="courses-grid">
-          <div class="course-card">
-            <img src="3.0.png" alt="Recorded Class" class="course-image">
-            <div class="course-content">
-              <h3 class="course-title">Recorded Class (English)</h3>
-              <p class="course-description"><br>🎥 Recorded Class: 1-Year Validity + Lifetime WhatsApp Community<br>📌 Important: After payment, don’t forget to join the WhatsApp Group from the link!
-<br>Many have paid but haven’t joined — you’ll miss all updates if you skip this.<br>💯 Once you join ANY course, you’ll get lifetime access to strategy updates.<br>This is your journey to trading mastery. Let’s level up together! 🚀
-
-<br><br>Stay focused, Be disciplined.
-<br>— Vicky Bobby Trader</p>
-              <div class="course-details">
-                <div class="price">₹10,000 + GST</div>
-                <button class="enroll-button" onclick="window.open('https://vickypedia7reaal.rpy.club/course/KPsQZwt1gn', '_blank')">Enroll Now</button>
-              </div>
-            </div>
-          </div>
-
-          <div class="course-card">
-            <img src="3.0.png" alt="Recorded Class" class="course-image">
-            <div class="course-content">
-              <h3 class="course-title">Recorded Class (Tamil)</h3>
-              <p class="course-description"><br>🎥 Recorded Class: 1-Year Validity + Lifetime WhatsApp Community<br>📌 Important: After payment, don’t forget to join the WhatsApp Group from the link!
-<br>Many have paid but haven’t joined — you’ll miss all updates if you skip this.<br>💯 Once you join ANY course, you’ll get lifetime access to strategy updates.<br>This is your journey to trading mastery. Let’s level up together! 🚀
-
-<br><br>Stay focused, Be disciplined.
-<br>— Vicky Bobby Trader</p>
-              <div class="course-details">
-                <div class="price">₹10,000 + GST</div>
-                <button class="enroll-button" onclick="window.open('https://vickypedia7reaal.rpy.club/course/DkDwZlr9th', '_blank')">Enroll Now</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      `,
-      live: `
-        <div class="course-card" style="margin: 0 auto; max-width: 600px;">
-          <img src="commingsoon.png" alt="Live Trading" class="course-image">
-          <div class="course-content">
-            <h3 class="course-title">One-on-One Session</h3>
-            <p class="course-description">Join real-time market sessions with Vicky Bobby</p>
-            <div class="course-details">
-              <div class="price">Coming Soon</div>
-            </div>
-          </div>
-        </div>
-      `,
-      liveLearn: `
-        <div class="course-card" style="margin: 0 auto; max-width: 600px;">
-          <img src="livetrading.jpg" alt="Live Learn" class="course-image">
-          <div class="course-content">
-            <h3 class="course-title">Live Trade + Learn Strategy ( August Batch ) </h3>
-            <p class="course-description"><br>🕒 Class Timing: <br>8:45 AM – 9:15 AM → Strategy Session
-<br>9:30 AM → My Live Trades Start
-<br>➡ Watch, Learn & Understand LIVE Execution
-<br>🔁 Post-Session Doubt Clearing
-<br>🧠 Just 1.5 hours daily — Real Market, Real Learning
-
-<br>🎯 Language: Tamil + English
-
-<br>📌 Important: After payment, don’t forget to join the WhatsApp Group from the link!
-<br>Many have paid but haven’t joined — you’ll miss all updates if you skip this.
-
-<br>💯 Once you join ANY course, you’ll get lifetime access to strategy updates.
-<br>This is your journey to trading mastery. Let’s level up together! 🚀
-
-<br><br>Stay focused. Be disciplined.
-<br>— Vicky Bobby Trader</p>
-            <div class="course-details">
-              <div class="price">₹27,700</div>
-              <button class="enroll-button" onclick="window.open('https://vickypedia7reaal.rpy.club/webinar/Lol7Gstw1s', '_blank')">Enroll Now</button>
-            </div>
-          </div>
-        </div>
-      `,
-      
-    };
-
-    content.innerHTML = templates[choice] || '';
-  }
-</script>
-
-
-    <!-- Rest of the content remains exactly the same -->
-        <section class="features">
-            <div class="features-header">
-                <h2>Why choose us</h2>
-            </div>
-            <div class="container">
-                
-                <div class="feature-card">
-                    <img src="book.png" alt="" width="50px">
-                    <h3>Expert Training</h3>
-                    <p>Learn from experienced traders with proven track records in the market.</p>
-                </div>
-               
-                <div class="feature-card">
-                    <img src="user.png" alt="" width="50px">
-                    <h3>Community Support</h3>
-                    <p>Join our active community of traders for discussions and market insights.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="trophy.png" alt="" width="50px">
-                    <h3>Proven Strategies</h3>
-                    <p>Access time-tested trading strategies that deliver consistent results.</p>
-                </div>
-                <div class="feature-card">
-                    <img src="trend.png" alt="" width="50px">
-                    <h3>Live Trading</h3>
-                    <p>Experience real-time market analysis and trading sessions.</p>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5504272387818584"
-     crossorigin="anonymous"></script>
-<!-- VickyBobbyTrader -->
-<ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-5504272387818584"
-     data-ad-slot="8327478975"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins>
-<script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>
-    <script>
-        //Live Trading Link
-        document.getElementById('live').addEventListener('click', function() {
-        window.open('https://vickypedia7reaal.rpy.club/webinar/Lol7Gstw1s', '_blank');
-        });
-         // Recorded Class Links
-        document.getElementById('tam').addEventListener('click', function() {
-        window.open('https://vickypedia7reaal.rpy.club/course/DkDwZlr9th', '_blank');
-        });
-        // English Recorded Class Link
-        document.getElementById('eng').addEventListener('click', function() {
-         window.open('https://vickypedia7reaal.rpy.club/course/KPsQZwt1gn', '_blank');
-        });
-      </script>
-      
-
-    <!-- Existing Footer -->
-    <footer class="footer">
-        <!-- Previous footer content remains exactly the same -->
-        <div class="footer-content">
-            <!-- Company Info -->
-            <div class="footer-section">
-                <h3 class="footer-title">VickyBobbyTrader</h3>
-                <p class="footer-description">Empowering traders with professional tools and insights for successful trading.</p>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/vickybobby_trader/" target="_blank" class="social-icon instagram" aria-label="Instagram">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                        </svg>
-                    </a>
-                    <a href="https://twitter.com/vickybobbytrade" target="_blank" class="social-icon twitter" aria-label="Twitter">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/>
-                        </svg>
-                    </a>
-                    <a href="https://www.youtube.com/@Vickybobbytrader" target="_blank" class="social-icon youtube" aria-label="YouTube">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/>
-                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"/>
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="footer-section">
-                <h4 class="footer-subtitle">Quick Links</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Community Support</a></li>
-                    <li><a href="#">Market Analysis</a></li>
-                    <li><a href="#">Trading Education</a></li>
-                    <li><a href="#">Premium Services</a></li>
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 w-6 h-6 text-accent mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <strong class="text-white">Pinpoint Your Block:</strong> We quickly identify the #1 issue sabotaging your profits—be it risk, entry, or psychology.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 w-6 h-6 text-accent mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <strong class="text-white">Actionable Insight:</strong> You walk away with one powerful, practical adjustment you can apply to your next trade for immediate impact.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 w-6 h-6 text-accent mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <strong class="text-white">Clear Next Steps:</strong> A personalized roadmap outlining the exact steps you need to take to scale your account consistently.
+                        </div>
+                    </li>
                 </ul>
             </div>
-
-            <!-- Resources -->
-            <div class="footer-section">
-                <h4 class="footer-subtitle">Resources</h4>
-                <ul class="footer-links">
-                    <li><a href="#">Trading Guide</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Support Center</a></li>
-                </ul>
-            </div>
-
-            
         </div>
+    </section>
 
-        <!-- Bottom Bar -->
-        <div class="footer-bottom">
-            <p>&copy; 2025 VickyBobbyTrader. All rights reserved. </p>
-            <p class="social-links1"> <span style="font-size:25px; font-weight: bold;">Developed by </span>
-                <a href="https://www.instagram.com/prajithkumar_shanmugam/" target="_blank" class="social-icon instagram" aria-label="Instagram">
-                    <svg width="25" height="25" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
-                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
-                        <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
-                    </svg>
-            </a></p>
-            <!-- <div class="footer-legal">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookie Policy</a>
-            </div> 
-            -->
+    <!-- Booking CTA Section (The Anchor) -->
+    <section class="py-20 bg-primary/10" id="booking-section">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-4 text-white">Ready for a Confident Trading Future?</h3>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Stop watching the market and start mastering it. Book your exclusive 1:1 slot now.
+            </p>
+            <button onclick="document.getElementById('booking-modal').classList.remove('hidden')" 
+                    class="px-12 py-5 bg-accent text-dark-bg text-2xl font-bold rounded-xl shadow-2xl hover:bg-emerald-400 transform hover:scale-105 transition duration-300 ring-4 ring-primary">
+                Book My Strategy Call
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 mb-4">&copy; 2025 Elite Trading Co. | Trading Smarter, Not Harder.</p>
+            <div class="flex justify-center space-x-6">
+                <!-- Placeholder for Instagram Link -->
+                <a href="https://instagram.com/[YourHandle]" target="_blank" class="text-gray-400 hover:text-primary transition duration-200">
+                    Instagram
+                </a>
+                <!-- Placeholder for Email -->
+                <a href="mailto:consult@elitetrading.com" class="text-gray-400 hover:text-primary transition duration-200">
+                    Email Support
+                </a>
+            </div>
         </div>
     </footer>
-    <script src="script.js"></script>
+
+    <!-- Booking Modal (Hidden by default) -->
+    <div id="booking-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
+        <div class="bg-gray-800 p-8 rounded-xl shadow-2xl max-w-md w-full relative">
+            
+            <!-- Close Button -->
+            <button onclick="document.getElementById('booking-modal').classList.add('hidden')" 
+                    class="absolute top-4 right-4 text-gray-400 hover:text-white transition duration-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+
+            <h3 class="text-2xl font-bold mb-4 text-accent">Book Your 20-Minute Session</h3>
+            <p class="text-gray-300 mb-6">
+                Please provide your contact details. You will be redirected to our secure scheduling calendar to select your time.
+            </p>
+            
+            <form onsubmit="handleBooking(event)">
+                <div class="mb-4">
+                    <label for="name" class="block text-sm font-medium text-gray-400 mb-1">Full Name</label>
+                    <input type="text" id="name" name="name" required
+                           class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-primary focus:border-primary">
+                </div>
+                <div class="mb-6">
+                    <label for="email" class="block text-sm font-medium text-gray-400 mb-1">Email (for Calendar Invite)</label>
+                    <input type="email" id="email" name="email" required
+                           class="w-full px-3 py-2 bg-gray-700 border border-gray-600 rounded-lg text-white focus:ring-primary focus:border-primary">
+                </div>
+                
+                <button type="submit" class="w-full px-4 py-3 bg-primary text-white font-semibold rounded-lg hover:bg-indigo-600 transition duration-200">
+                    Continue to Calendar
+                </button>
+            </form>
+
+            <div id="booking-message" class="mt-4 text-center hidden">
+                <!-- Success message will appear here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Simple JavaScript for handling the form submission and simulating a redirection/success.
+        function handleBooking(event) {
+            event.preventDefault(); // Stop the default form submission
+
+            const name = document.getElementById('name').value;
+            const messageDiv = document.getElementById('booking-message');
+            const form = event.target;
+
+            // Simple validation check
+            if (name.length < 2) {
+                messageDiv.textContent = "Please enter your full name.";
+                messageDiv.className = "mt-4 text-center text-red-400";
+                messageDiv.classList.remove('hidden');
+                return;
+            }
+
+            // Hide the form and display a success message
+            form.classList.add('hidden');
+            
+            messageDiv.innerHTML = `
+                <div class="p-4 bg-green-900/50 rounded-lg border border-green-700">
+                    <p class="font-bold text-lg text-accent">Success, ${name}!</p>
+                    <p class="text-sm text-gray-200">
+                        You would now be redirected to the secure calendar (e.g., Calendly/Acuity) 
+                        to finalize your time slot. Check your email for a confirmation!
+                    </p>
+                    <button onclick="document.getElementById('booking-modal').classList.add('hidden'); location.reload();" 
+                            class="mt-3 px-4 py-2 bg-accent text-dark-bg text-sm font-semibold rounded-md hover:bg-emerald-400">
+                        Close
+                    </button>
+                </div>
+            `;
+            messageDiv.classList.remove('hidden');
+
+            // In a real application, you would put the redirection logic here:
+           // window.location.href = "https://calendar.google.com/calendar/embed?src=vickypedia7here%40gmail.com&ctz=UTC"; 
+        }
+    </script>
 </body>
 </html>
