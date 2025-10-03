@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Trading Consultancy | 1:1 Strategy Sessions</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind Theme for a professional, energetic look -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#4F46E5', // Indigo for confidence
+                        'accent': '#10B981',  // Emerald for growth/success
+                        'dark-bg': '#111827', // Dark background for seriousness
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom styles for professional background texture or gradients */
+        .hero-bg {
+            background-color: #111827;
+            background-image: radial-gradient(at 0% 0%, #1f2937 0, transparent 50%), 
+                              radial-gradient(at 100% 100%, #1e40af 0, transparent 70%);
+        }
+    </style>
+</head>
+<body class="bg-dark-bg text-white font-sans antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="p-4 border-b border-gray-800">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-accent tracking-wider">
+                Elite Trading Co.
+            </h1>
+            <button onclick="openPaymentModal()" class="px-4 py-2 bg-primary hover:bg-indigo-600 text-white rounded-lg transition duration-200 shadow-lg">
+                Book Now
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg py-20 md:py-32 text-center">
+        <div class="container mx-auto px-6">
+            <!-- Main Confident Headline -->
+            <h2 class="text-5xl md:text-7xl font-extrabold mb-4 leading-tight">
+                <span class="text-primary block">Stop Guessing.</span> Start Growing.
+            </h2>
+            <!-- Sub-headline / Confident Pitch -->
+            <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+                Unlock your **consistent edge** with a personalized, 1:1 strategy session. We cut through the noise and build a clear trading blueprint for *your* goals.
+            </p>
+            <!-- Primary Call to Action -->
+            <button onclick="openPaymentModal()" 
+                class="inline-block px-10 py-4 bg-accent text-dark-bg text-xl font-bold rounded-xl shadow-2xl hover:bg-emerald-400 transform hover:scale-105 transition duration-300 ring-2 ring-primary">
+                Secure Your 20-Min Strategy Call
+            </button>
+            <p class="mt-4 text-sm text-gray-500">Limited slots available this week.</p>
+        </div>
+    </section>
+
+    <!-- Value Proposition / The Problem & Solution -->
+    <section class="py-16 bg-gray-900">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-bold text-center mb-12 text-gray-100">Are You Stuck In The Trader's Loop?</h3>
+            
+            <div class="grid md:grid-cols-3 gap-8 text-center max-w-5xl mx-auto">
+                <!-- Problem 1: Inconsistency -->
+                <div class="p-6 bg-gray-800/50 rounded-xl shadow-xl border-t-4 border-primary/50">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.275a1.125 1.125 0 011.238-0.231c0.368 0.164 0.584 0.559 0.584 0.985v10.5c0 0.828-0.672 1.5-1.5 1.5H4.5c-0.828 0-1.5-0.672-1.5-1.5V6.75c0-0.828 0.672-1.5 1.5-1.5h10.5c0.426 0 0.821-0.216 0.985-0.584a1.125 1.125 0 010.231-1.238z"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2 text-accent">Inconsistency</h4>
+                    <p class="text-gray-400">You have a few great days, but the next wipes out your gains. You lack a defined, repeatable process.</p>
+                </div>
+
+                <!-- Problem 2: Psychology -->
+                <div class="p-6 bg-gray-800/50 rounded-xl shadow-xl border-t-4 border-primary/50">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2 text-accent">Emotional Trades</h4>
+                    <p class="text-gray-400">Fear and greed control your entries and exits. You chase momentum and suffer from revenge trading.</p>
+                </div>
+
+                <!-- Problem 3: Direction -->
+                <div class="p-6 bg-gray-800/50 rounded-xl shadow-xl border-t-4 border-primary/50">
+                    <svg class="w-10 h-10 mx-auto mb-4 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19V6l12-3v14M9 19c-3.1 0-5 0-5 0M9 19c0-3.1 0-5 0-5M21 16V5M9 14v5m12-3l-12 3"></path></svg>
+                    <h4 class="text-xl font-semibold mb-2 text-accent">No Clear Plan</h4>
+                    <p class="text-gray-400">You jump between strategies or rely on signals. You need a simple, proven system tailored to *you*.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation Focus Section -->
+    <section class="py-16 bg-dark-bg" id="consultation-focus">
+        <div class="container mx-auto px-6 max-w-4xl">
+            <div class="bg-gray-800/70 p-8 md:p-12 rounded-2xl shadow-2xl">
+                <h3 class="text-3xl md:text-4xl font-bold mb-6 text-primary text-center">
+                    What You Get In 20 Minutes
+                </h3>
+                <p class="text-gray-300 text-center mb-8">
+                    This isn't a sales pitch. This is a focused diagnosis session to give you immediate clarity.
+                </p>
+
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 w-6 h-6 text-accent mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <strong class="text-white">Pinpoint Your Block:</strong> We quickly identify the #1 issue sabotaging your profits—be it risk, entry, or psychology.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 w-6 h-6 text-accent mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <strong class="text-white">Actionable Insight:</strong> You walk away with one powerful, practical adjustment you can apply to your next trade for immediate impact.
+                        </div>
+                    </li>
+                    <li class="flex items-start">
+                        <svg class="flex-shrink-0 w-6 h-6 text-accent mt-1 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                        <div>
+                            <strong class="text-white">Clear Next Steps:</strong> A personalized roadmap outlining the exact steps you need to take to scale your account consistently.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking CTA Section (The Anchor) -->
+    <section class="py-20 bg-primary/10" id="booking-section">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-4xl font-bold mb-4 text-white">Ready for a Confident Trading Future?</h3>
+            <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                Stop watching the market and start mastering it. Book your exclusive 1:1 slot now.
+            </p>
+            <button onclick="openPaymentModal()" 
+                class="inline-block px-12 py-5 bg-accent text-dark-bg text-2xl font-bold rounded-xl shadow-2xl hover:bg-emerald-400 transform hover:scale-105 transition duration-300 ring-4 ring-primary">
+                Book My Strategy Call
+            </button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 border-t border-gray-800 py-8">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-gray-500 mb-4">&copy; 2025 Elite Trading Co. | Trading Smarter, Not Harder.</p>
+            <div class="flex justify-center space-x-6">
+                <!-- Placeholder for Instagram Link -->
+                <a href="https://instagram.com/[YourHandle]" target="_blank" class="text-gray-400 hover:text-primary transition duration-200">
+                    Instagram
+                </a>
+                <!-- Placeholder for Email -->
+                <a href="mailto:consult@elitetrading.com" class="text-gray-400 hover:text-primary transition duration-200">
+                    Email Support
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Premium Payment Preview Modal (Hidden by default) -->
+    <div id="payment-modal" class="hidden fixed inset-0 bg-black bg-opacity-80 z-50 flex items-center justify-center p-4">
+        <div class="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 p-8 rounded-2xl shadow-2xl max-w-lg w-full relative border-4 border-accent">
+            <!-- Close Button -->
+            <button onclick="closePaymentModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white transition duration-200">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            </button>
+            <h3 class="text-3xl font-extrabold mb-2 text-accent text-center">20Mins Zoom Call With VickyBobby</h3>
+            <div class="text-center text-lg text-gray-200 mb-4">Consultancy Fee : <span class="font-bold text-white">₹499</span> + GST<br>Total : <span class="font-bold text-accent">₹589</span></div>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-6 mb-6">
+                <div class="flex-1 text-center">
+                    <button onclick="showUPISection()" id="upiTab" class="px-4 py-2 mb-2 bg-primary text-white rounded-lg font-semibold shadow hover:bg-indigo-600 focus:outline-none">UPI</button>
+                    <div id="upiSection" class="mt-2">
+                        <div class="text-gray-300 text-sm mb-1">UPI ID:</div>
+                        <div class="flex items-center justify-center gap-2">
+                            <span id="upiIdText" class="text-lg font-bold text-accent select-all">vickypedia7here-1@okaxis</span>
+                            <button onclick="copyUPIId()" title="Copy UPI ID" class="ml-1 px-2 py-1 bg-gray-700 hover:bg-primary text-white rounded transition text-sm flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16h8a2 2 0 002-2V8a2 2 0 00-2-2H8a2 2 0 00-2 2v6a2 2 0 002 2zm0 0v2a2 2 0 002 2h4a2 2 0 002-2v-2" /></svg>
+                                Copy
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex-1 text-center">
+                    <button onclick="showQRSection()" id="qrTab" class="px-4 py-2 mb-2 bg-gray-700 text-white rounded-lg font-semibold shadow hover:bg-gray-600 focus:outline-none">QR</button>
+                    <div id="qrSection" class="hidden mt-2 flex flex-col items-center">
+                        <img src="qr.jpg" alt="QR Code" class="w-40 h-40 rounded-lg border-2 border-accent shadow-lg mb-2" />
+                        <div class="text-xs text-gray-400 mb-1">Scan to pay</div>
+                        <div class="text-sm font-bold text-accent select-all">vickypedia7here-1@okaxis</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col md:flex-row gap-4 mb-6">
+                <button onclick="payWithUPI()" class="flex-1 px-4 py-3 bg-accent text-dark-bg font-bold rounded-lg shadow hover:bg-emerald-400 text-lg">Pay</button>
+                <button onclick="payWithWhatsApp()" class="flex-1 px-4 py-3 bg-primary text-white font-bold rounded-lg shadow hover:bg-indigo-600 text-lg">WhatsApp</button>
+            </div>
+            <div class="bg-gray-800/80 rounded-lg p-4 text-gray-200 text-sm">
+                <div class="mb-2 font-semibold text-accent">After Payment click “ Whatsapp “ Button to share details</div>
+                <!-- <ol class="list-decimal list-inside mb-2">
+                    <li>Name :</li>
+                    <li>Language (Tamil or English) :</li>
+                    <li>Trading Experience :</li>
+                    <li>Problem :</li>
+                    <li>Your Free Times :</li>
+                </ol> -->
+                <div class="text-xs text-gray-400">Within 12-24Hrs You Will Get Appointment Time !</div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Payment Modal Logic
+        function openPaymentModal() {
+            document.getElementById('payment-modal').classList.remove('hidden');
+            showUPISection();
+        }
+        function closePaymentModal() {
+            document.getElementById('payment-modal').classList.add('hidden');
+        }
+        function showUPISection() {
+            document.getElementById('upiSection').style.display = 'block';
+            document.getElementById('qrSection').style.display = 'none';
+            document.getElementById('upiTab').classList.add('bg-primary');
+            document.getElementById('upiTab').classList.remove('bg-gray-700');
+            document.getElementById('qrTab').classList.remove('bg-primary');
+            document.getElementById('qrTab').classList.add('bg-gray-700');
+        }
+        function showQRSection() {
+            document.getElementById('upiSection').style.display = 'none';
+            document.getElementById('qrSection').style.display = 'flex';
+            document.getElementById('qrTab').classList.add('bg-primary');
+            document.getElementById('qrTab').classList.remove('bg-gray-700');
+            document.getElementById('upiTab').classList.remove('bg-primary');
+            document.getElementById('upiTab').classList.add('bg-gray-700');
+        }
+        function copyUPIId() {
+            const upiId = document.getElementById('upiIdText').textContent;
+            navigator.clipboard.writeText(upiId).then(function() {
+                const btn = event.currentTarget;
+                btn.textContent = 'Copied!';
+                setTimeout(() => { btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16h8a2 2 0 002-2V8a2 2 0 00-2-2H8a2 2 0 00-2 2v6a2 2 0 002 2zm0 0v2a2 2 0 002 2h4a2 2 0 002-2v-2" /></svg>Copy'; }, 1200);
+            });
+        }
+        function payWithUPI() {
+            window.open('upi://pay?pa=vickypedia7here-1@okaxis&pn=Vicky%20Vicky&am=589', '_blank');
+        }
+        function payWithWhatsApp() {
+            const msg = encodeURIComponent(`I have paid for the 20Mins Zoom Call.\n\nDetails:\n1) Name :\n2) Language (Tamil or English) :\n3) Trading Experience :\n4) Problem :\n5) Your Free Times :`);
+            window.open('https://wa.me/919361823525?text=' + msg, '_blank');
+        }
+    </script>
+</body>
+</html>
